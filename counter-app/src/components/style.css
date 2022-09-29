@@ -1,0 +1,25 @@
+*{
+    background-color: #DAA06D;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    border: 1px solid black;
+    width: 40%;
+    height: 300px;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.btn {
+    height: 50px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.numb {
+    font-size: larger;
+}

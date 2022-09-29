@@ -1,10 +1,11 @@
 import './App.css';
-import Index from './components/Index';
+import Counter from './components/Counter';
+
 
 function App() {
   return (
     <div className="App">
-      <Index />
+      <Counter />
     </div>
   );
 }
