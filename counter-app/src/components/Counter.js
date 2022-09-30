@@ -1,20 +1,28 @@
-import React from 'react'
-import './style.css'
-import {increaseValue, decreaseValue} from "../redux/action-creator"
-import {useSelector, useDispatch} from "react-redux"
-function Counter() {
+import React from "react";
+import "./style.css";
+import { increaseValue, decreaseValue, restartValue } from "../redux/action-creator";
+import { useSelector, useDispatch } from "react-redux";
 
-  const myState = useSelector(state=>state.ourState.count)
-  const dispatch = useDispatch()
-  console.log("++++ myState ++++", myState)
+function Counter() {
+  const myState = useSelector((state) => state.ourState.count);
+  const dispatch = useDispatch();
+  console.log("++++ myState ++++", myState);
+
   return (
     <div className="box">
-        <h1>Counter App</h1>
-        <button className='btn' onClick={()=>dispatch(increaseValue)}>Increment</button>
-        <p className='numb'>{myState}</p>
-        <button className='btn' onClick={()=>dispatch(decreaseValue)}>Decrement</button>
+      <h1>Counter App</h1>
+      <button className="btn" onClick={() => dispatch(increaseValue())}>
+        Increment
+      </button>
+      <p className="numb">{myState}</p>
+      <button className="btn1" onClick={() => dispatch(decreaseValue())}>
+        Decrement
+      </button>
+      <button className="btn2" onClick={() => dispatch(restartValue())}>
+        Restart
+      </button>
     </div>
-  )
+  );
 }
 
-export default Counter
+export default Counter;

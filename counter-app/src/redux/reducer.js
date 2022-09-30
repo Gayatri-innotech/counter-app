@@ -15,6 +15,11 @@ export const reducer = (state = initialState, action) => {
         ...state,
         count: state.count - 1,
       };
+      case actionTypes.RESTART:
+        return {
+          ...state,
+          count: 0
+        }
     default:
       return state;
   }

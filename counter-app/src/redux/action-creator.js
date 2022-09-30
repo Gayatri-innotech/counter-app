@@ -1,13 +1,18 @@
-import * as actionTypes from "./action-types"
+import * as actionTypes from "./action-types";
 
 export const increaseValue = () => {
-    return {
-        type:actionTypes.INCREMENT
-    }
-}
+  return {
+    type: actionTypes.INCREMENT,
+  };
+};
 
 export const decreaseValue = () => {
-    return {
-        type:actionTypes.DECREMENT
-    }
-}
+  return {
+    type: actionTypes.DECREMENT,
+  };
+};
+export const restartValue = () => {
+  return {
+    type: actionTypes.RESTART,
+  };
+};
